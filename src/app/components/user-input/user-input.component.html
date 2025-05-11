@@ -1,1 +1,64 @@
-<p>user-input works!</p>
+<div>
+    <form (submit)="onSubmit()">
+      <p>
+        <label for="initial-deposit">Initial Deposit</label>
+        <input type="number" name="initial-deposit" id="initial-deposit" value="0" [(ngModel)]="initialDeposit"/>
+      </p>
+      <div>
+        <div>
+          <label for="additional-contribtuions">Additional Contributions</label>
+          <input
+            type="number"
+            id="additional-contributions"
+            name="additional-contributions"
+            [(ngModel)]="additionalContribution"
+          />
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="contribution-month"
+            name="contribution-month"
+            value="Month"
+          />
+          <label for="contribution-month">Month</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="contribution-year"
+            name="contribution-year"
+            value="Year"
+            checked
+          />
+          <label for="contribution-year">Year</label>
+        </div>
+      </div>
+      <div>
+        <label for="APY">APY%</label>
+        <input type="number" name="APY" title="APY" [(ngModel)]="APY"/>
+        <div>
+          <input type="radio" id="APY-month" name="APY-month" value="Month"/>
+          <label for="APY-month">Month</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="APY-year"
+            name="APY-year"
+            value="Year"
+            checked
+          />
+          <label for="APY-year">Year</label>
+        </div>
+      </div>
+      <div>
+        <label for="years">Years</label>
+        <input type="number" name="years" title="years" [(ngModel)]="years"/>
+      </div>
+      <div>
+        <button type="submit">Calculate</button>
+      </div>
+    </form>
+  </div>
+  

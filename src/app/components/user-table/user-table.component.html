@@ -1,1 +1,42 @@
-<p>user-table works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Year
+            </th>
+            <th>
+                Initial
+            </th>
+            <th>
+                Interest
+            </th>
+            <th>
+                Current
+            </th>
+            <th>
+                Contributed
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(data of tableData(); track data.year){
+            <tr>
+                <td>
+                    {{data.year}}
+                </td>
+                <td>
+                    {{data.initial | currency}}
+                </td>
+                <td>
+                    {{data.interestAmount |currency}}
+                </td>
+                <td>
+                    {{data.currentTotal | currency}}
+                </td>
+                <td>
+                    {{data.contributedAmount | currency}}
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

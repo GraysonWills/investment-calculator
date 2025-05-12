@@ -1,5 +1,3 @@
 <app-header></app-header>
 <app-user-input (userInput)="onSumbit($event)"></app-user-input>
-<p>
-  {{userInput?.APY}}
-</p>
+<app-user-table [tableData]="tableData"></app-user-table>

@@ -17,7 +17,6 @@ export class UserInputComponent {
   years: number = 0;
 
 onSubmit(){
-  console.log("here");
   this.userInput.emit({
     initialDeposit: this.initialDeposit,
     additionalContribution: this.additionalContribution,

@@ -1,3 +1,9 @@
-<app-header></app-header>
-<app-user-input (userInput)="onSumbit($event)"></app-user-input>
-<app-user-table [tableData]="tableData"></app-user-table>
+<app-panel>
+    <app-header />
+</app-panel>
+<app-panel> 
+    <app-user-input (userInput)="onSumbit($event)" />
+</app-panel>
+<app-panel>
+    <app-user-table [tableData]="tableData" />
+</app-panel>

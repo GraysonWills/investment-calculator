@@ -5,10 +5,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { UserInput } from './components/user-input/input.model';
 import { InvestmentCalculatorService } from './components/investment-calculator.service';
 import { TableData } from './components/user-table/table-data.model';
+import { PanelComponent } from './components/panel/panel.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, UserInputComponent, UserTableComponent],
+  imports: [HeaderComponent, UserInputComponent, UserTableComponent, PanelComponent],
   providers: [InvestmentCalculatorService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

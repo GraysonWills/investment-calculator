@@ -1,0 +1,31 @@
+p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+.active{
+
+}
+
+input{
+    border-color: aquamarine;
+    margin: 8px 0;
+    padding:  12px 5px;
+    border-radius: 5px;
+    max-width: 250px;
+    min-width: none;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    
+}
+
+button{
+    width: 100%;
+    padding: 20px;
+}

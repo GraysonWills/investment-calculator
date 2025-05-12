@@ -1,0 +1,8 @@
+div {
+    justify-content: center;
+    text-align: center;
+    color: aquamarine;
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+}

@@ -10,8 +10,7 @@
         [(ngModel)]="initialDeposit"
       />
     </p>
-    <div>
-      <div>
+    <p>
         <label for="additional-contribtuions">Additional Monthly Contributions</label>
         <input
           type="number"
@@ -19,18 +18,17 @@
           name="additional-contributions"
           [(ngModel)]="additionalContribution"
         />
-      </div>
-    </div>
-    <div>
+    </p>
+    <p>
       <label for="APY">APY%</label>
       <input type="number" name="APY" title="APY" [(ngModel)]="APY" />
-    </div>
-    <div>
+    </p>
+    <p>
       <label for="years">Years</label>
       <input type="number" name="years" title="years" [(ngModel)]="years" />
-    </div>
+    </p>
     <div>
       <button type="submit">Calculate</button>
-    </div>
+  </div>
   </form>
 </div>
